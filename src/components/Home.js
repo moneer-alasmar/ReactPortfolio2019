@@ -1,7 +1,5 @@
 import React from "react";
 import portrait from "../media/portrait.jpg";
-import { Link } from "react-router-dom";
-import "../styles/home.css";
 
 const Home = () => {
   return (
