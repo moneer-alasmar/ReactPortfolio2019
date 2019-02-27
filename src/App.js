@@ -6,6 +6,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import "./styles/app.css";
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/contact" exact component={Contact} />
           </Switch>
         </Router>
+        <Footer className="footer" />
       </div>
     );
   }
