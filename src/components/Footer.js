@@ -6,6 +6,7 @@ const Footer = () => {
       <img
         className="mx-auto d-block"
         id="loading"
+        alt=""
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
       />
     </div>

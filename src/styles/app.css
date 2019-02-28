@@ -45,7 +45,19 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  html {
+  body {
+    background: url("../media/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100rem;
     height: auto;
+    margin: 0;
+  }
+
+  .container {
+    padding-top: 10%;
+  }
+
+  .aboutContainer {
+    padding-bottom: 10%;
   }
 }

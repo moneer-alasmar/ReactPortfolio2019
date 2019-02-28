@@ -3,78 +3,101 @@ import portrait from "../media/portrait.jpg";
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="container aboutContainer">
       <div className="row">
         <div className="col-md-12">
-          <h1 class="display-2 text-light myShadow">
+          <h1 className="display-2 text-light myShadow">
             ABOUT
-            <span class="text-primary display-2"> ME</span>
+            <span className="text-primary display-2"> ME</span>
           </h1>
         </div>
       </div>
-      <div className="row">
+      <div className="row mb-4">
         <div className="col-md-4">
           <img
+            alt=""
             src={portrait}
-            class="rounded-circle img-fluid mx-auto d-block shadow-lg"
+            className="rounded-circle img-fluid mx-auto d-block shadow-lg"
           />
         </div>
         <div className="col-md-8 myBackground rounded">
           <p className="lead text-light">
             <span style={{ opacity: 1 }}>
-              I'm an innovative software engineer offering 3+ years of
-              experience in the full software development lifecycle. When I'm
-              not coding I enjoy learning about and enhancing my photography,
-              hiking and spending time with my wife! You'll find more
-              information about my technical skills below, just click to read
-              more!
+              I want to start by saying thanks for taking your time to find out
+              more about me! I'm a Los Angeles native with a love for all things
+              tech and all things outdoors. When I don't have time to
+              hike(prefferably the Sierra Nevada Mountain Range), I enjoy
+              expanding my knowledge of full stack web developement. I have all
+              of my skills listed below, just click to find out more!
             </span>
           </p>
         </div>
       </div>
-      <div className="row">
-        <div className="col-md-4 text-center">
-          <h1
-            className="myShadow text-light"
-            data-toggle="modal"
-            data-target="#exampleModal"
-          >
-            Skills
-          </h1>
+      <div className="row justify-content-center">
+        <div className="col-md-12 text-center">
+          <button className="btn btn-primary btn-block shadow-lg mb-3">
+            <h3
+              className="myShadow text-light"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Tech Skills
+            </h3>
+          </button>
+
+          <button className="btn btn-primary btn-block shadow-lg mb-3">
+            <h3
+              className="myShadow text-light"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Experience
+            </h3>
+          </button>
+
+          <button className="btn btn-primary btn-block shadow-lg">
+            <h3
+              className="myShadow text-light"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Education
+            </h3>
+          </button>
 
           <div
-            class="modal fade"
+            className="modal fade"
             id="exampleModal"
-            tabindex="-1"
+            tabIndex="-1"
             role="dialog"
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
+            <div className="modal-dialog" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="exampleModalLabel">
                     Modal title
                   </h5>
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     data-dismiss="modal"
                     aria-label="Close"
                   >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
+                <div className="modal-body">...</div>
+                <div className="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    className="btn btn-secondary"
                     data-dismiss="modal"
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" className="btn btn-primary">
                     Save changes
                   </button>
                 </div>
@@ -83,7 +106,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="row" style={{ height: 100 }} />
     </div>
   );
 };
