@@ -1,7 +1,31 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-  background-color: rgb(41, 95, 194) !important;
-  background: url("../media/YosemiteField.jpg");
+  background: url("../media/Background.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  height: auto;
+  margin: 0;
+}
+
+.container {
+  margin-top: 10%;
+}
+
+.myShadow {
+  text-shadow: 2px 2px 8px #61b3ff;
+}
+
+.myShadow span {
+  text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+
+.myBackground {
+  background-color: #07274a;
+  opacity: 0.7;
 }
 
 #loading {
@@ -17,5 +41,11 @@ body {
   }
   to {
     -webkit-transform: rotate(359deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    height: auto;
   }
 }

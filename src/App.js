@@ -11,18 +11,16 @@ import Footer from "./components/Footer";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <Navbar />
-        <div className="container">
-          <Router>
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/about" exact component={About} />
-              <Route path="/projects" exact component={Projects} />
-              <Route path="/contact" exact component={Contact} />
-            </Switch>
-          </Router>
-        </div>
+        <Router>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" exact component={About} />
+            <Route path="/projects" exact component={Projects} />
+            <Route path="/contact" exact component={Contact} />
+          </Switch>
+        </Router>
         <Footer />
       </div>
     );
