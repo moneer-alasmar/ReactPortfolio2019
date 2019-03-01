@@ -8,7 +8,6 @@ const About = () => {
       <Spring
         from={{ opacity: 0, marginTop: -500 }}
         to={{ opacity: 1, marginTop: 0 }}
-        config={{ duration: 1000 }}
       >
         {props => (
           <div style={props}>
