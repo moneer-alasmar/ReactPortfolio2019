@@ -36,7 +36,7 @@ const Home = () => {
                 >
                   {props => (
                     <div style={props}>
-                      <h1 className="display-3">Moneer Alasmar</h1>
+                      <h1 className="display-6 pt-2">Moneer Alasmar</h1>
                       <p className="lead">
                         Full Stack Web Developer, Photographer & Designer
                       </p>
