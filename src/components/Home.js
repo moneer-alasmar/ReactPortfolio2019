@@ -38,7 +38,7 @@ const Home = () => {
               </a>
               <br />
               <a href={resume} download className="text-primary">
-                Download Resume
+                <i className="fas fa-file-download pt-4" /> Download Resume
               </a>
             </div>
           </div>
