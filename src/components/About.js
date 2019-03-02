@@ -6,8 +6,9 @@ const About = () => {
   return (
     <div className="container aboutContainer">
       <Spring
-        from={{ opacity: 0, marginTop: -500 }}
-        to={{ opacity: 1, marginTop: 0 }}
+        from={{ opacity: 0 }}
+        to={{ opacity: 1 }}
+        config={{ duration: 1250 }}
       >
         {props => (
           <div style={props}>
