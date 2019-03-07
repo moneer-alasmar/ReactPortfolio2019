@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Code Snippets",
+    "image": "https://i.imgur.com/g58CI6T.png",
+    "githubLink": "https://github.com/moneer-alasmar/codeSnippetsMERNapp",
+    "deployLink": "https://protected-scrubland-93924.herokuapp.com/",
+    "technology": "React"
+  },
+  {
+    "title": "Daisy's Photography",
+    "image": "https://i.imgur.com/5h1qT5v.png",
+    "githubLink": "https://github.com/moneer-alasmar/daisyLandingPage",
+    "deployLink": "https://moneer-alasmar.github.io/daisyLandingPage/",
+    "technology": "Node"
+  },
+  {
+    "title": "Image Search",
+    "image": "https://i.imgur.com/ty3xyk4.png",
+    "githubLink": "https://github.com/moneer-alasmar/reactCarousel",
+    "deployLink": "https://blooming-thicket-83582.herokuapp.com/",
+    "technology": "React"
+  },
+  {
+    "title": "Text2Speech",
+    "image": "https://i.imgur.com/X3VuvZn.png",
+    "githubLink": "https://github.com/moneer-alasmar/text2speech",
+    "deployLink": "https://moneer-alasmar.github.io/text2speech/",
+    "technology": "Node"
+  }
+]
