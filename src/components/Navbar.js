@@ -27,14 +27,6 @@ const Navbar = () => {
         <div className="navbar-nav">
           <a
             className="nav-item nav-link"
-            href="/about"
-            componentClass={Link}
-            to="/about"
-          >
-            About <span className="sr-only">(current)</span>
-          </a>
-          <a
-            className="nav-item nav-link"
             href="/projects"
             componentClass={Link}
             to="/projects"
@@ -48,6 +40,14 @@ const Navbar = () => {
             to="/contact"
           >
             Contact
+          </a>
+          <a
+            className="nav-item nav-link"
+            href="/about"
+            componentClass={Link}
+            to="/about"
+          >
+            About <span className="sr-only">(current)</span>
           </a>
         </div>
       </div>

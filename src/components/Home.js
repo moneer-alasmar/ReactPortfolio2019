@@ -2,6 +2,8 @@ import React from "react";
 import portrait from "../media/portrait.jpg";
 import resume from "../media/Moneer Alasmar Full Stack Developer.pdf";
 import { Spring } from "react-spring/renderprops";
+import Typist from "react-typist";
+import "react-typist/dist/Typist.css";
 
 const Home = () => {
   return (
@@ -37,14 +39,16 @@ const Home = () => {
                   {props => (
                     <div style={props}>
                       <h1 className="display-6 pt-2">Moneer Alasmar</h1>
-                      <p className="lead">
-                        Full Stack Web Developer, Photographer & Designer
-                      </p>
                     </div>
                   )}
                 </Spring>
+                <Typist avgTypingSpeed={40} startDelay={1100}>
+                  <p className="lead" style={{ display: "inline-block" }}>
+                    Web Developer... Photographer... Tech Enthusiast
+                  </p>
+                </Typist>
 
-                <hr />
+                <hr style={{ marginTop: 0 }} />
 
                 <div className="text-center">
                   <a

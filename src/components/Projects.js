@@ -2,6 +2,9 @@ import React from "react";
 import myProjects from "../apis/projects.json";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import Typist from "react-typist";
+import "react-typist/dist/Typist.css";
+import { Spring } from "react-spring/renderprops";
 
 class Projects extends React.Component {
   state = {
@@ -68,9 +71,23 @@ class Projects extends React.Component {
         <div className="row">
           <div className="col-md-2" />
           <div className="col-md-8">
-            <div className="jumbotron text-center">
-              <p className="display-4">My Apps</p>
-              <p className="lead">Filter by Technology: </p>
+            <div className="jumbotron text-center shadow">
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                config={{ duration: 1000 }}
+              >
+                {props => (
+                  <p className="display-4" style={props}>
+                    My Apps
+                  </p>
+                )}
+              </Spring>
+              <Typist avgTypingSpeed={40} startDelay={1100}>
+                <p className="lead" style={{ display: "inline-block" }}>
+                  Filter by Technology:
+                </p>
+              </Typist>
               <button
                 onClick={() => this.selectLanguage("react")}
                 className="btn btn-primary mr-2"

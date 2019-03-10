@@ -12,34 +12,28 @@ const About = () => {
       >
         {props => (
           <div style={props}>
-            <div className="row">
-              <div className="col-md-12">
-                <h1 className="display-2 text-light myShadow">
-                  ABOUT
-                  <span className="text-primary display-2"> ME</span>
-                </h1>
+            <div className="jumbotron shadow">
+              <div className="row">
+                <h1 className="display-2">About Me</h1>
               </div>
-            </div>
-            <div className="row mb-4">
-              <div className="col-md-4">
-                <img
-                  alt=""
-                  src={portrait}
-                  className="rounded-circle img-fluid mx-auto d-block shadow-lg"
-                />
-              </div>
-              <div className="col-md-8 myBackground rounded">
-                <p className="lead text-light">
-                  <span style={{ opacity: 1 }}>
+              <div className="row">
+                <div className="col-md-3">
+                  <img
+                    alt=""
+                    src={portrait}
+                    className="rounded-circle img-fluid mx-auto d-block shadow-lg"
+                  />
+                </div>
+                <div className="col-md-9">
+                  <p>
                     I want to start by saying thanks for taking your time to
                     find out more about me! I'm a Los Angeles native with a love
                     for all things tech and all things outdoors. When I don't
                     have time to hike(prefferably the Sierra Nevada Mountain
                     Range), I enjoy expanding my knowledge of full stack web
-                    developement. I have all of my skills listed below, just
-                    click to find out more!
-                  </span>
-                </p>
+                    developement.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
