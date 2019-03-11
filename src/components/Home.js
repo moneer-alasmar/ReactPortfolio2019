@@ -44,7 +44,7 @@ const Home = () => {
                 </Spring>
                 <Typist avgTypingSpeed={40} startDelay={1100}>
                   <p className="lead" style={{ display: "inline-block" }}>
-                    Web Developer... Photographer... Tech Enthusiast
+                    Full Stack Web Developer
                   </p>
                 </Typist>
 
